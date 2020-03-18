@@ -1,0 +1,29 @@
+.slider h3,
+.slider h5,
+.clients h3, {
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.logo{
+	height: 130px;
+	width: 120px;
+	position: relative;
+	bottom: 33px;
+}
+.parallax-container{
+	height: 240px;
+}
+
+.parallax img{
+	filter: grayscale(1);
+	opacity: 0.5 !important;
+}
+
+section{
+	padding: 20px 0;
+} 
+
+.card-panel img{
+	height: 70px;
+	width: 520px
+}
