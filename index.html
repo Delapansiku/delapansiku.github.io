@@ -194,34 +194,56 @@
           <h3 class="light center grey-text text-darken-3">Portofolio</h3>
           <h6 class="light center grey-text text-darken-3">Project Latest</h6>
            <div class="row">
-            
-            <div class="col m4 s12">
-              <div class="carousel carousel-slider responsive-img materialboxed" data-caption= "Client: Pak Akmal (Apartement Scandinavia, Tangerang City)">
-                <a class="carousel-item"><img src="img/porto/1.jpg"></a>
-                <a class="carousel-item"><img src="img/porto/2.jpg"></a>
+             
+            <div class="col s12 m4">
+              <div class="card #1b5e20 green darken-4">
+              <div class="card-image carousel carousel-slider" data-caption= "Client: Pak Akmal (Apartement Scandinavia, Tangerang City)">
+              <a class="carousel-item"><img src="img/porto/1.jpg"></a>
+              <span class="card-title">Apartement </span>
+              <a class="carousel-item"><img src="img/porto/2.jpg"></a>
                <a class="carousel-item"><img src="img/porto/3.jpg"></a>
                <a class="carousel-item"><img src="img/porto/4.jpg"></a>
                <a class="carousel-item"><img src="img/porto/5.jpg"></a>
-          </div>
-        </div>
-            
-            <div class="col m4 s12">
-              <div class="carousel carousel-slider responsive-img materialboxed" data-caption= "Client: Pak Intan (Perumahan Toursinah Hill,Garut)"> 
+               
+              </div>
+                  <div class="card-content white-text">
+                    <p>Dengan kombinasi warna yang tepat dapat menghasilkan ruang keluarga mejadi lebih hidup, Dan pengaplikasian finishing pada elemen dinding yang unfinshed memberikan aksen penggayaan industrial yang sedang menjadi trend design masa kini.</p>
+                  </div>
+            </div>
+            </div>   
+              
+              <div class="col s12 m4">
+                <div class="card #1b5e20 green darken-4">
+                <div class="card-content white-text card-image carousel carousel-slider" >
                 <a class="carousel-item"><img src="img/porto/9.jpg"></a>
+                <span class="card-title"> Kitchen Area </span>
                 <a class="carousel-item"><img src="img/porto/10.jpg"></a>
                <a class="carousel-item"><img src="img/porto/11.jpg"></a>
-              </div>
-            </div>
 
-              <div class="col m4 s12">
-              <div class="carousel carousel-slider responsive-img materialboxed" data-caption= "Client:Pak Bagja (kadungora,Garut)"> 
+              </div>
+                <div class="card-content white-text">
+                  <p>Warna merupakan sebuah elemen pendukung ruang yang selain memiliki fungsi estetika namun berpengaruh terhadap efek psikologis seseorang.
+                    Warna putih dapat membuat ruangan terlihat luas, segar dan nyaman. Sedangkan warna coklat dapat membuat ruangan terlihat lembut dan nyaman.</p>
+                </div>
+            </div>
+            </div>
+            
+              <div class="col s12 m4">
+              <div class="card #1b5e20 green darken-4">
+              <div class="card-image carousel carousel-slider" >
                 <a class="carousel-item"><img src="img/porto/6.jpg"></a>
+                <span class="card-title"> Kitchen Area</span>
                 <a class="carousel-item"><img src="img/porto/7.jpg"></a>
                <a class="carousel-item"><img src="img/porto/8.jpg"></a>
+               
               </div>
+                <div class="card-content white-text">
+                  <p>Dapur memiliki kompleksitas yang lebih dibanding dengan ruang-ruang lain pada rumah tinggal, sehingga dalam perancangannya perlu memperhatikan beberapa standar yang telah ditetapkan. Selain itu, elemen pendukung seperti penerapan warna juga perlu diperhatikan agar terciptanya keamanan dan kenyamanan dalam melakukan kegiatan di dalam dapur.</p>
+                </div>
+            </div>
             </div>
            
-           </div>
+          </div>
          </div>
        </section>
 
@@ -265,7 +287,7 @@
                           </div>
                           
                          <div class="input-field">
-                            <input type="text" name="phone" id="phone">
+                            <input type="number" name="phone" id="phone" class="validate"> 
                             <label for="phone">Phone Number</label>
                           </div>
 
@@ -322,7 +344,10 @@ crossorigin="anonymous"></script>
 <script>
   
   const sideNav = document.querySelectorAll('.sidenav');
-  M.Sidenav.init(sideNav);
+  M.Sidenav.init(sideNav,{
+    isDragged	: true,
+    isOpen: true
+  });
 
 
   const slider = document.querySelectorAll('.slider');
